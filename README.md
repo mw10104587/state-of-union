@@ -36,7 +36,7 @@ The reason of picking k is mentioned in iPython notebook.
 
 
 
-# LDA Annotation
+## LDA Annotation
 LDA doesn't have negative features which makes it a little more easier to understand intuitively. LDA has a minimum probability setting for features, making the result more cleaner. But LDA seems to take a little longer time on my laptop.
 
 
@@ -72,19 +72,18 @@ LDA doesn't have negative features which makes it a little more easier to unders
 
 
 # How State of union speech has changed over time?
-## Algorithm
+### Algorithm
 I think my algorithm is really boring, it just sums up the probability of all ten (or more) years' topics. I considered normalizing, but I'm not sure on what, since document length is already removed from this feature. I think this algorithm has a really big problem, there are some common topics that almost every document includes, this sums them up and show them in the very front. 
 
 
-## Observations
+### Observations
 However, I think we can still see a little bit of pattern of chronological events in the result. For example, you see a lot more 18xx appearing in the several first decades. I also found that in the State of union speech, democracy gets mentioned less nowadays. Also it's quite obvious that this algorithm tend to group similary things together, for example ['lake','tribe','forest'], it sort of tells the latent semantic part, but it doesn't necessarily always match to a certain event, but a topic instead.
 
 
-## Matching the historical events
-We can find bank, deficit and unemployed around the time of 1931-1940, but also in 1921 and 1951. 
-I think this showed WWII pretty clear that it showed plane, fighter, nazi and hitler and several war related terms.
-It also uniquely showed al-qaida in the 2001-2010 period. 
-
+### Matching the historical events
++ We can find bank, deficit and unemployed around the time of 1931-1940 which matched the great depression, but we also see this topic rank pretty high in 1921 and 1951. 
++ I think this result showed WWII pretty clear that it included `plane`, `fighter`, `nazi`, `hitler` and several war related terms.
++ It also uniquely showed al-qaida in the 2001-2010 period. 
 
 
 
